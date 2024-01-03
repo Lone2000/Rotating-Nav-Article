@@ -12,14 +12,132 @@ body{
     font-size: 16px;
     height: 100vh;
     width: 100vw;
+    background-color: #333;
 }
 
+.active{
+    display: block;
+}
+.inactive{
+    display: none;
+}
 .container{
-    width: 70%;
+    width: 100vw;
     /* height: 100vh; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: auto;
+    background-color: #fff;
+    padding: 50px;
+}
+
+.article{
+    width: 70%;
+}
+
+.round-container{
+position:fixed;
+top: -100;
+left: -100;
+/* left: 0; */
+}
+
+.round{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    border-radius: 0px 0px 90px;
+    position: relative;
+}
+
+button{
+    position: absolute;
+    left:35%;
+    top: 40%;
+    /* Style */
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+    color: white;
+    cursor: pointer;
+}
+
+#close {
+    transition: transform 0.8s ease-in-out;
+}
+
+.btn-active {
+    transform: translateX(-100px);
+}
+
+
+
+.content{
+    /* Tranforming Layer */
+    width: 100vw;
+    min-height: 100vh;
+    transform-origin: top left;
+
+    /* Transition */
+    transition: transform 1s ease-in;
+}
+.shownav{
+    transform: rotate(-20deg);
+}
+
+#open{
+    transition: opacity 0.5s ease-in;
+}
+
+#close{
+    transition: opacity 0.5s ease-in;
+}
+
+.vanish{
+    opacity: 0;
+    /* pointer-events: none; */
+}
+
+
+nav{
+    position: absolute;
+    bottom: 100px;
+    animation: move-in 1s ease-in;
+}
+
+nav ul{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li{
+    margin-top: 25px;
+    font-size: 1.5rem;
+    /* padding:10px; */
+    color: #fff;
+    text-transform: uppercase;
+}
+
+nav li i{
+    /* width: 40%; */
+    font-size: 1.25rem;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+
+
+@keyframes move-in {
+    0%{
+        left: -200px;
+    }
+
+    100%{
+        left:0px;
+    }
 }
