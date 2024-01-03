@@ -112,11 +112,12 @@ nav{
 
 .move-out{
     animation: move-out 1s ease-in;
+    animation-fill-mode: forwards;
 }
 
 
 nav ul{
-    padding: 10px;
+    padding: 0.625rem;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
@@ -139,38 +140,38 @@ nav li{
 nav li i{
     /* width: 40%; */
     font-size: 1.25rem;
-    margin-right: 5px;
+    margin-right: 0.313rem;
     overflow: hidden;
 }
 
 nav li:nth-child(2){
-    margin-left: 50px;
+    margin-left: 3.125rem;
 }
 
 nav li:nth-child(3){
-    margin-left: 150px;
+    margin-left: 9.375rem;
 }
 
 
 
 @keyframes move-in {
     0%{
-        left: -200px;
+        left: -12.5rem;
     }
 
     100%{
-        left:-50px;
+        left:-3.125rem;
     }
 }
 
 
 @keyframes move-out {
     0%{
-        left: -50px;
+        left: -3.125rem;
     }
 
     100%{
-        left: -200px
+        left: -25.5rem;
     }
 }
 
@@ -196,6 +197,12 @@ nav li:nth-child(3){
     text-align: justify;
 }
 
-.nav-vanish{
+@media (max-width:700px) {
+    nav li{
+        font-size: 1rem;
+    }
 
+    nav li i{
+        font-size: 1rem;
+    }
 }
