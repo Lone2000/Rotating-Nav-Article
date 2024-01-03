@@ -4,30 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="./scripts.js"></script>
     <title>Rotated Navigation</title>
 </head>
 <body>
-    <nav>
-        <div class="menu-logos">
-            <div class="bar active"></div>
-            <div class="cross inactive"></div>
+
+    <div class="content">
+        <div class="round-container">
+            <div class="round">
+                <button id="open" onclick="showNav()"><i class="fas fa-bars"></i></button>
+                <button id="close" class="inactive" onclick="hideNav()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
         </div>
+    
+        <main class="container">
+            <div class="article">
+                <h2>Welcome to NHK - Synopsis</h2>
+                <sub>Irfan Lone ~ 2024</sub>
+                <p class="info">Twenty-two-year-old college dropout Tatsuhiro Satou has been a hikikomori for almost four years now. In his isolation, he has come to believe in many obscure conspiracy theories, but there is one in particular which he holds unshakable faith in: the theory that the evil conspirator behind his shut-in NEET (Not in Employment, Education or Training) status is the Nihon Hikikomori Kyokai (NHK)—an evil and secret organization dedicated to fostering the spread of hikikomori culture.
+
+NHK ni Youkoso! is a psychological dramedy that follows Tatsuhiro as he strives to escape from the NHK's wicked machinations and the disease of self-wrought isolation, while struggling to even just leave his apartment and find a job. His unexpected encounter with the mysterious Misaki Nakahara might signal a reversal of fortune for Tatsuhiro, but with this meeting comes the inevitable cost of having to face his greatest fear—society.</p>
+                <h3>Fan Review</h3>
+                <img src="./images/ezgif.com-optijpeg (5).jpg" alt="" style="max-width: 100%; height: auto;">
+                <p class="review">Outstanding thing. Some times it was amusing to watch, sometimes it was painfully.
+
+&quot;Welcome to the NHK&quot; is a kind of collection. Collection of troubles and problems we can meet in our life. It doesn't perceive as anime. It doesn't perceive as something fictitious. It is life. Hateful everyday life gets emotional colors and draws a wide reaction with slowly walking real life on the our side of screen.
+
+In &quot;NHK&quot; everyday events are not shown grotesque and mockingly as in parodies and not weightly depressed as in psychological thrillers but somehow chaotically and tragicomicly &mdash; you want to weep, smile, think ironically and philosophize simultaneously. Every joke provokes not a roar of laughter but the sad smile as you recognize yourself and your troubles in &quot;fictional&quot; heroes.
+
+Even if you have a job, relatives, interests, it doesn't change anything. You aren't able to get rid of solitude if you feel your purposelessness and pettiness. If you laugh, you laughter is insincere. If you cry, you wail. Problem of self-concept and fear of the life is urgent for many people, but the feeling of hopelessness and despair appears only when there is nobody to support you. You've got tired from struggle along on your's own not at once but gradually. It happens little by little but it does. There are no N.H.K., there is no god, there are only nonchalance, loneliness and despair. You think that people around get everything easier and live merrily and sociable but you simply can not see the same as you as they also are dissociated from the world. It is impossible to meet for such humans but only they can understand each other. It is very hard and cruel. In &quot;NHK&quot; it is shown somehow exaggeratedly but the inner life is described entirely faithful. Psychology is described as much as possible faithfully, all the reasons are named correctly, emphases are placed where they needed.
+
+Art and sound do for this work and don't have any serious shortcomings. All the aspects of this anime are high qualitative.
+
+Such masterpiece anime must be a conspiracy... Conspiracy against what?
+Reviewer’s Rating: 10</p>
+            </div>
+        </main>
+    </div>
+
+    <nav class="inactive">
         <ul>
-            <li><span>LogoHere</span>home</li>
-            <li><span>LogoHere</span>about</li>
-            <li><span>LogoHere</span>contact</li>
+            <li><i class="fa-solid fa-house"></i>home</li>
+            <li><i class="fa-solid fa-user"></i>about</li>
+            <li><i class="fa-solid fa-envelope"></i>contact</li>
         </ul>
     </nav>
-    <main class="container">
-        <div class="article">
-            <h2>Welcome to NHK</h2>
-            <sub>Irfan Lone</sub>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis error cumque sit esse corporis omnis fuga adipisci praesentium! Eos quas enim harum facilis quisquam dicta explicabo. Veritatis eveniet quidem quo error minus obcaecati ratione dignissimos quis sunt praesentium tempora quae, dolores pariatur! Temporibus beatae illum nulla rerum amet neque perferendis laudantium dicta, hic commodi quas accusantium exercitationem, praesentium, modi voluptatum quod sed pariatur dolorem ipsum doloribus perspiciatis? Repellat tenetur ex rem placeat, quaerat rerum soluta reiciendis. Sequi, magnam odio repellat cumque nostrum nisi delectus praesentium illo nobis vel exercitationem deserunt ad, magni libero corrupti, quia voluptates. Esse, iure sequi officia molestiae quibusdam nisi expedita earum quae voluptates fuga aliquam ea veniam. Atque, nobis ex? At, maxime quas, architecto corporis soluta, reprehenderit dolorem deserunt aperiam possimus dolorum mollitia amet optio quia quidem aspernatur nam excepturi! Incidunt rerum animi dolores non quis vero nisi quas, dolorum facere blanditiis itaque illo saepe at!</p>
-            <h3>Character here</h3>
-            <img src="./images/ezgif.com-optijpeg (5).jpg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, illum dolor excepturi aut dolorum nesciunt hic? Unde eligendi, nisi adipisci aspernatur quis soluta sint eaque modi distinctio. Soluta animi facere tempore ipsam, dolor quibusdam ipsa. Minus dignissimos fugiat perspiciatis maxime dolor quam eum nihil neque reprehenderit voluptas libero atque, mollitia quidem suscipit incidunt laboriosam nostrum fuga debitis architecto tempore odio ducimus rem blanditiis? Quia quo non itaque vitae velit illo veniam suscipit pariatur cum ipsum?</p>
-        </div>
-        
-    </main>
 </body>
 </html>

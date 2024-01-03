@@ -9,6 +9,8 @@ function showNav() {
 
   // toggle inactive
   nav.classList.remove("inactive");
+  nav.classList.remove("move-out");
+
   // Toggle animation
   nav.classList.toggle("move-in");
 
@@ -45,5 +47,7 @@ function hideNav() {
 
   //   grab nav
   const nav = document.querySelector("nav");
-  nav.classList.toggle("inactive");
+  nav.classList.toggle("move-in");
+
+  nav.classList.toggle("move-out");
 }

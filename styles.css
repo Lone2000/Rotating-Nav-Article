@@ -34,6 +34,7 @@ body{
 }
 
 .article{
+    position: relative;
     width: 70%;
 }
 
@@ -103,31 +104,51 @@ button{
 
 nav{
     position: absolute;
-    bottom: 100px;
+    bottom: 50px;
+    /* left: -10px; */
     animation: move-in 1s ease-in;
+    animation-fill-mode: forwards;
 }
+
+.move-out{
+    animation: move-out 1s ease-in;
+}
+
 
 nav ul{
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    /* Style */
+    list-style: none;
 }
 
 nav li{
-    margin-top: 25px;
+    margin:10px 0;
     font-size: 1.5rem;
     /* padding:10px; */
     color: #fff;
     text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
 }
 
 nav li i{
     /* width: 40%; */
     font-size: 1.25rem;
-    margin-right: 10px;
+    margin-right: 5px;
     overflow: hidden;
+}
+
+nav li:nth-child(2){
+    margin-left: 50px;
+}
+
+nav li:nth-child(3){
+    margin-left: 150px;
 }
 
 
@@ -138,6 +159,43 @@ nav li i{
     }
 
     100%{
-        left:0px;
+        left:-50px;
     }
+}
+
+
+@keyframes move-out {
+    0%{
+        left: -50px;
+    }
+
+    100%{
+        left: -200px
+    }
+}
+
+
+.article sub{
+    color:gray;
+    font-style: italic;
+}
+
+.article .info{
+    margin-top: 10px;
+    line-height: 1.5;
+    text-align: justify;
+
+}
+
+.article h3{
+    margin: 20px 0px;
+}
+
+.article .review{
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.nav-vanish{
+
 }
